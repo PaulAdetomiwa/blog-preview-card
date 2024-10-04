@@ -21,7 +21,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- https://github.com/PaulAdetomiwa/qr-code-component/blob/main/index.html
+- https://github.com/PaulAdetomiwa/blog-preview-card/blob/main/index.html
 
 ## My process
 
@@ -29,22 +29,51 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 
 ### What I learned
 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+<div class="container">
+  <div class="first_half">
+    <img src="assets/images/illustration-article.svg" alt="">
+  </div>
+  <div class="second_half">
+    <h3>Learning</h3>
+
+    <p>Published 21 Dec 2023</p>
+
+    <h2>HTML & CSS foundations</h2>
+
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+    <div class="me"><img src="assets/images/image-avatar.webp" alt=""><span>Greg Hooper</span></div>
+  </div>
+</div>
 ```
-- I learned how to use links to add fonts to a webpage.
+- This part was a bit tricky. My idea was to cut up the .container div into two parts, two divs without borders, in a column. This would overlap the .container div with no space left, making it easier to input elements without them scattering.
 
 ```css
 .container {
-          font-family: 'Outfit', sans-serif;
-}
+      font-family: 'Figtree', sans-serif;
+      background-color: hsl(0, 0%, 100%);
+      width: 350px;
+      height: 500px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 8px 8px 0 black; 
+      position: relative;
+      overflow: hidden;
+    }
+
+    .first_half, .second_half {
+      position: relative; 
+      width: 90%; 
+    }
 ```
-- Using internal css, the font was applied to a specific container.
+- This is how, using CSS, I was successfully able to divide .container into two parts, which would later be the containers for the other elements within the webpage.
 
 ## Author
 
