@@ -75,6 +75,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ```
 - This is how, using CSS, I was successfully able to divide .container into two parts, which would later be the containers for the other elements within the webpage.
 
+- I also set a minimum height for the body to ensure responsiveness. 
+
 ## Author
 
 - Website - [Paul Adetomiwa](https://github.com/PaulAdetomiwa)
