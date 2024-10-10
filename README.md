@@ -31,7 +31,6 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- CSS Grid
 - CSS Flexbox 
 
 ### What I learned
